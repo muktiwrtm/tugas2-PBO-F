@@ -15,6 +15,8 @@ public class MainClass {
         Makanan makanan = new Makanan();
         Minuman minuman = new Minuman();
         Kalkulasi kalkulasi = new Kalkulasi();
+        int balik=0;
+        do {
         System.out.println("Menu Burjo");
         System.out.println("1. Makanan");
         System.out.println("2. Minuman");
@@ -46,7 +48,10 @@ public class MainClass {
                 break;
         }
         System.out.println("Total Pembayaran : " + kalkulasi.kalkulasiAkhir(akhirMakanan, akhirMinuman));
-
+        
+         System.out.println("balik ke menu ? (1/0)");
+         balik = input.nextInt();
+        } while (balik == 1);
 
     }
 
